@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml" fx:controller="flotmaxproject.guiController">
+  <children>
+    <Button fx:id="button" layoutX="10.0" layoutY="287.0" onAction="#handleButtonAction" text="Flot" />
+    <Label fx:id="label" layoutX="10.0" layoutY="321.0" minHeight="16.0" minWidth="69.0" />
+    <MenuBar prefWidth="750.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Fichier">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Fermer" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edition">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Nouveau Sommet" />
+            <MenuItem mnemonicParsing="false" text="Nouveau Arc" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Aide ?">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Apropos" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="250.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="750.0" />
+    <Pane layoutY="24.0" prefHeight="250.0" prefWidth="750.0">
+      <children>
+        <Label layoutX="87.0" layoutY="160.0" prefWidth="53.0" text="S">
+          <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Supprimer" />
+              </items>
+            </ContextMenu>
+          </contextMenu>
+          <font>
+            <Font name="System Bold" size="14.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="664.0" layoutY="140.0" text="T">
+          <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Supprimer" />
+              </items>
+            </ContextMenu>
+          </contextMenu>
+        </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
